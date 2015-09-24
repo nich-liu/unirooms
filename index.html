@@ -1,1 +1,156 @@
-Hello world
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+
+    <meta charset=utf-8 />
+
+    <style>
+
+      * {
+        font-family: Verdana,Geneva,sans-serif;
+        font-weight: lighter;
+      }
+      .slideshow {
+        position: relative;
+      }
+
+      #floorplan {
+        position:absolute;
+      }
+
+      #slide1, #slide2, #slide3, #slide4, #slide5 {
+        position: absolute;
+      }
+
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+
+      .room {
+        float: center;
+        max-width: 80%;
+        width: auto;
+      }
+    </style>
+
+  </head>
+
+  <body>
+
+    <div class = "floorplan">
+      <img src = "firstfloor.png" usemap = "#menumap">
+      <map name="menumap">
+        <area shape="circle" coords="100, 195, 25" class = "kitchen" href="javascript:void(0)" onclick = "changeSlide1()">
+        <area shape="circle" coords="245,225,75" class="lounge" href="javascript:void(0)" onclick = "changeSlide2()">
+        <area shape="circle" coords="352, 185, 25" class = "kindness" href="javascript:void(0)" onclick = "changeSlide3()">
+        <area shape="circle" coords="516, 268, 25" class = "finearts" href="javascript:void(0)" onclick = "changeSlide4()">
+        <area shape="circle" coords="516, 268, 25" class = "SSO" href="javascript:void(0)" onclick = "changeSlide4()">
+        <area shape="circle" coords="516, 268, 25" class = "college" href="javascript:void(0)" onclick = "changeSlide4()">
+        <area shape="circle" coords="630, 250, 25" class="mac lab" href="javascript:void(0)" onclick = "changeSlide5()">
+      </map>
+    </div>
+
+    <div class="slideshow">
+      <div class="room" id = "slide1">
+
+        <h2>Room One</h2>
+        <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel nisi sed purus mollis accumsan consequat sit amet lectus. Proin aliquet ante at aliquam luctus. Donec porta nulla eu nisl porta, et congue felis semper. Fusce justo quam, ultrices quis ultricies vel, fermentum eu lectus. Fusce pretium urna vitae nibh fermentum, eget egestas sem eleifend.
+        Cras euismod, lacus vel vulputate faucibus, augue odio venenatis lorem, eu interdum augue est quis arcu.
+        Nullam lorem sapien, sagittis sit amet dolor quis, euismod cursus diam.
+        Nam egestas quis arcu eu ullamcorper. Pellentesque pellentesque aliquam porttitor. Quisque sagittis consequat magna eget cursus.
+        </p>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/Uv9TU51L33U" frameborder="0" allowfullscreen></iframe>
+      </div>
+
+      <div class = "room" id="slide2">
+        <h2>Room Two</h2>
+        <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel nisi sed purus mollis accumsan consequat sit amet lectus. Proin aliquet ante at aliquam luctus. Donec porta nulla eu nisl porta, et congue felis semper. Fusce justo quam, ultrices quis ultricies vel, fermentum eu lectus. Fusce pretium urna vitae nibh fermentum, eget egestas sem eleifend.
+        Cras euismod, lacus vel vulputate faucibus, augue odio venenatis lorem, eu interdum augue est quis arcu.
+        Nullam lorem sapien, sagittis sit amet dolor quis, euismod cursus diam.
+        Nam egestas quis arcu eu ullamcorper.
+        </p>
+
+       </div>
+
+      <div class = "room" id="slide3">
+        <h2>Room Three</h2>
+
+        <p>
+        Nulla vel nisi sed purus mollis accumsan consequat sit amet lectus. Proin aliquet ante at aliquam luctus. Donec porta nulla eu nisl porta, et congue felis semper. Fusce justo quam, ultrices quis ultricies vel, fermentum eu lectus. Fusce pretium urna vitae nibh fermentum, eget egestas sem eleifend.
+        Cras euismod, lacus vel vulputate faucibus, augue odio venenatis lorem, eu interdum augue est quis arcu.
+        Nullam lorem sapien, sagittis sit amet dolor quis, euismod cursus diam.
+        Nam egestas quis arcu eu ullamcorper. Pellentesque pellentesque aliquam porttitor. Quisque sagittis consequat magna eget cursus.
+        </p>
+
+
+      </div>
+
+      <div class = "room" id = "slide4">
+        <h2>Room Four</h2>
+
+        <p>
+        Nullam lorem sapien, sagittis sit amet dolor quis, euismod cursus diam.
+        Nam egestas quis arcu eu ullamcorper. Pellentesque pellentesque aliquam porttitor. Quisque sagittis consequat magna eget cursus.
+        </p>
+
+      </div>
+
+      <div class = "room" id = "slide5">
+
+        <h2>Room Five</h2>
+
+        <p>
+        Augue odio venenatis lorem, eu interdum augue est quis arcu.
+        Nullam lorem sapien, sagittis sit amet dolor quis, euismod cursus diam.
+        Nam egestas quis arcu eu ullamcorper. Pellentesque pellentesque aliquam porttitor. Quisque sagittis consequat magna eget cursus.
+        </p>
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/Uv9TU51L33U" frameborder="0" allowfullscreen></iframe>
+
+      </div>
+
+
+
+    </div>
+
+    <script>
+
+        $('.slideshow div').hide(); // hide all slides
+        $('.slideshow div:first-child').show(); // show first slide
+
+        function changeSlide1() {
+          $('.slideshow div').fadeOut(500);
+          $('#slide1').fadeIn(1000);
+        }
+
+        function changeSlide2() {
+          $('.slideshow div').fadeOut(500);
+          $('#slide2').fadeIn(1000);
+        }
+
+        function changeSlide3() {
+          $('.slideshow div').fadeOut(500);
+          $('#slide3').fadeIn(1000);
+        }
+
+        function changeSlide4() {
+          $('.slideshow div').fadeOut(500);
+          $('#slide4').fadeIn(1000);
+        }
+
+        function changeSlide5() {
+          $('.slideshow div').fadeOut(500);
+          $('#slide5').fadeIn(1000);
+        }
+
+      </script>
+
+  </body>
+
+</html>
