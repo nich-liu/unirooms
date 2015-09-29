@@ -3,33 +3,35 @@
 <html>
 
   <head>
+    <!--Load the Jquery library that is used during for the transition fade animation.-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
-
+    //Declare Character encoding
     <meta charset=utf-8 />
-
+    //Instead of linking a stylesheet, it is placed directly inside the html file within the style tag. This is fine since it's just one page.
     <style>
-
+      /*Set font*/
       * {
         font-family: Verdana,Geneva,sans-serif;
         font-weight: lighter;
       }
+      /*We want the slideshow to be relative to the rest of the frame.*/
       .slideshow {
         position: relative;
       }
-
+      /*Floorplan should stay fixed.*/
       #floorplan {
         position:absolute;
       }
-
+      /*Actual slides should be fixed, or they would jump when transitioning.*/
       #slide1, #slide2, #slide3, #slide4, #slide5 {
         position: absolute;
       }
-
+      /*Have the image scale to width.*/
       img {
         max-width: 100%;
         height: auto;
       }
-
+      /*Have the test scale to width.*/
       .room {
         float: center;
         max-width: 80%;
@@ -41,6 +43,7 @@
 
   <body>
 
+    This element is the
     <div class = "floorplan">
       <img src = "firstfloor.png" usemap = "#menumap">
       <map name="menumap">
