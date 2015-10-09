@@ -5,9 +5,9 @@
   <head>
     <!--Load the Jquery library that is used during for the transition fade animation.-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
-    //Declare Character encoding
+    <!-- Declare Character encoding -->
     <meta charset=utf-8 />
-    //Instead of linking a stylesheet, it is placed directly inside the html file within the style tag. This is fine since it's just one page.
+    <!-- Instead of linking a stylesheet, it is placed directly inside the html file within the style tag. This is fine since it's just one page. -->
     <style>
       /*Set font*/
       * {
@@ -34,7 +34,7 @@
       /*Have the test scale to width.*/
       .room {
         float: center;
-        max-width: 80%;
+        max-width: 90%;
         width: auto;
       }
     </style>
@@ -43,7 +43,7 @@
 
   <body>
 
-    This element is the
+    <!-- This element is the image map. -->
     <div class = "floorplan">
       <img src = "firstfloor.png" usemap = "#menumap">
       <map name="menumap">
@@ -54,24 +54,27 @@
         <area shape="circle" coords="516, 268, 25" class = "SSO" href="javascript:void(0)" onclick = "changeSlide4()">
         <area shape="circle" coords="516, 268, 25" class = "college" href="javascript:void(0)" onclick = "changeSlide4()">
         <area shape="circle" coords="630, 250, 25" class="mac lab" href="javascript:void(0)" onclick = "changeSlide5()">
+        <area shape="circle" coords="630, 250, 25" class="mac lab" href="javascript:void(0)" onclick = "changeSlide6()">
       </map>
     </div>
 
     <div class="slideshow">
       <div class="room" id = "slide1">
 
-        <h2>Room One</h2>
+        <h2>Kitchen</h2>
         <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel nisi sed purus mollis accumsan consequat sit amet lectus. Proin aliquet ante at aliquam luctus. Donec porta nulla eu nisl porta, et congue felis semper. Fusce justo quam, ultrices quis ultricies vel, fermentum eu lectus. Fusce pretium urna vitae nibh fermentum, eget egestas sem eleifend.
-        Cras euismod, lacus vel vulputate faucibus, augue odio venenatis lorem, eu interdum augue est quis arcu.
-        Nullam lorem sapien, sagittis sit amet dolor quis, euismod cursus diam.
-        Nam egestas quis arcu eu ullamcorper. Pellentesque pellentesque aliquam porttitor. Quisque sagittis consequat magna eget cursus.
+          The kitchen, home of Uni's dwindling population of microwaves, home of the lost and found, home of Uni's very own secodn library consitsting of lost and found books
+          home of Uni's collection of overflow trophies. Uni students cook, laugh, and eat. Once of home of the famous biweekly pizza sales, no longer. Uni's kitchen has seen
+          good and bad days. Also stop by to check out
         </p>
+        <ul>
+          <li>poop</li>
+        </ul>
           <iframe width="560" height="315" src="https://www.youtube.com/embed/Uv9TU51L33U" frameborder="0" allowfullscreen></iframe>
       </div>
 
       <div class = "room" id="slide2">
-        <h2>Room Two</h2>
+        <h2>Lounge</h2>
         <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel nisi sed purus mollis accumsan consequat sit amet lectus. Proin aliquet ante at aliquam luctus. Donec porta nulla eu nisl porta, et congue felis semper. Fusce justo quam, ultrices quis ultricies vel, fermentum eu lectus. Fusce pretium urna vitae nibh fermentum, eget egestas sem eleifend.
         Cras euismod, lacus vel vulputate faucibus, augue odio venenatis lorem, eu interdum augue est quis arcu.
@@ -82,7 +85,7 @@
        </div>
 
       <div class = "room" id="slide3">
-        <h2>Room Three</h2>
+        <h2>Little Box of Lovely</h2>
 
         <p>
         Nulla vel nisi sed purus mollis accumsan consequat sit amet lectus. Proin aliquet ante at aliquam luctus. Donec porta nulla eu nisl porta, et congue felis semper. Fusce justo quam, ultrices quis ultricies vel, fermentum eu lectus. Fusce pretium urna vitae nibh fermentum, eget egestas sem eleifend.
@@ -95,7 +98,7 @@
       </div>
 
       <div class = "room" id = "slide4">
-        <h2>Room Four</h2>
+        <h2>Mac Lab</h2>
 
         <p>
         Nullam lorem sapien, sagittis sit amet dolor quis, euismod cursus diam.
@@ -106,7 +109,21 @@
 
       <div class = "room" id = "slide5">
 
-        <h2>Room Five</h2>
+        <h2>106N</h2>
+
+        <p>
+        Augue odio venenatis lorem, eu interdum augue est quis arcu.
+        Nullam lorem sapien, sagittis sit amet dolor quis, euismod cursus diam.
+        Nam egestas quis arcu eu ullamcorper. Pellentesque pellentesque aliquam porttitor. Quisque sagittis consequat magna eget cursus.
+        </p>
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/Uv9TU51L33U" frameborder="0" allowfullscreen></iframe>
+
+      </div>
+
+      <div class = "room" id = "slide6">
+
+        <h2>Lounge</h2>
 
         <p>
         Augue odio venenatis lorem, eu interdum augue est quis arcu.
